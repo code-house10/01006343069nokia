@@ -11,7 +11,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الرحمة لنقل العفش - شريكك الموثوق لنقل العفش بالرحمة</title>
+    <title>شركة لنقل العفش | خصم 25% | ونش رفع العفش | نقل آمن</title>
+    <meta name="description" content="شركة لنقل العفش تقدم خصم 25% على جميع خدمات نقل العفش داخل وخارج المدينة. نوفر ونش رفع العفش، تغليف، فك وتركيب، ونقل آمن ومضمون. اتصل الآن!">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -44,7 +45,7 @@
         .hero-overlay {
             background: linear-gradient(to top, rgba(0, 51, 102, 0.8), rgba(0, 0, 0, 0.3));
         }
-        .service-card:hover, .location-card:hover, .gallery-item:hover {
+        .service-card:hover, .location-card:hover, .gallery-item:hover, .article-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease-in-out;
@@ -64,6 +65,22 @@
         .testimonial-card {
              border-right: 5px solid #ff6600;
         }
+        .offer-badge {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transform: rotate(15deg);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 3px dashed white;
+            text-align: center;
+            line-height: 1.2;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -79,7 +96,7 @@
             <div class="flex items-center space-x-4 space-x-reverse">
                 <a href="#" data-number="01006343069" class="text-gray-medium hover:text-secondary flex items-center transition-colors duration-300 call-btn">
                     <i class="fas fa-phone-alt text-secondary ml-2"></i>
-                    <span>تواصل معنا: 01006343069</span>
+                    <span class="font-bold">خصم اليوم على نقل العفش 25% | اتصل: 01006343069</span>
                 </a>
             </div>
             <div class="flex items-center space-x-4 space-x-reverse">
@@ -94,17 +111,17 @@
     <nav class="bg-white py-4 shadow-lg sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4">
             <a href="#" class="flex items-center">
-                <img src="images/logo.png" alt="شعار شركة الرحمة لنقل العفش" class="h-16">
+                <img src="images/logo.png" alt="شعار شركة لنقل العفش" class="h-16">
             </a>
             <div class="hidden md:flex items-center space-x-8 space-x-reverse">
                 <a href="#" class="text-primary font-bold hover:text-secondary transition-colors">الرئيسية</a>
-                <a href="#about" class="text-dark font-semibold hover:text-primary transition-colors">عن الشركة</a>
-                <a href="#services" class="text-dark font-semibold hover:text-primary transition-colors">خدماتنا المتميزة</a>
-                <a href="#features" class="text-dark font-semibold hover:text-primary transition-colors">لماذا نحن الأفضل؟</a>
+                <a href="#about" class="text-dark font-semibold hover:text-primary transition-colors">عن شركتنا</a>
+                <a href="#services" class="text-dark font-semibold hover:text-primary transition-colors">خدمات نقل العفش</a>
+                <a href="#articles" class="text-dark font-semibold hover:text-primary transition-colors">مناطق الخدمة</a>
                 <a href="#contact" class="text-dark font-semibold hover:text-primary transition-colors">اتصل بنا</a>
             </div>
             <div class="flex items-center">
-                <a href="#" data-number="01006343069" class="bg-secondary text-white px-6 py-2 rounded-full hover:bg-orange-700 transition duration-300 font-bold shadow-md call-btn">اطلب عرض سعر</a>
+                <a href="#" data-number="01006343069" class="bg-secondary text-white px-6 py-2 rounded-full hover:bg-orange-700 transition duration-300 font-bold shadow-md call-btn">اطلب عرض سعر بخصم 25%</a>
                 <button class="md:hidden text-primary text-3xl mr-4" id="mobile-menu-button">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -114,8 +131,7 @@
              <a href="#" class="block py-3 px-4 text-primary font-bold hover:bg-gray-light">الرئيسية</a>
              <a href="#about" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">عن الشركة</a>
              <a href="#services" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">خدماتنا المتميزة</a>
-             <a href="#features" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">لماذا نحن الأفضل؟</a>
-             <a href="#location-services" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">مناطق الخدمة</a>
+             <a href="#articles" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">مناطق الخدمة</a>
              <a href="#testimonials" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">آراء عملائنا</a>
              <a href="#contact" class="block py-3 px-4 text-dark font-semibold hover:bg-gray-light">اتصل بنا</a>
         </div>
@@ -124,16 +140,17 @@
     <!-- Hero Section -->
     <header class="relative">
         <div class="h-[650px] overflow-hidden">
-            <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="عملية نقل عفش احترافية" class="w-full h-full object-cover">
+            <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="ونش رفع العفش - نقل عفش آمن" class="w-full h-full object-cover">
             <div class="absolute inset-0 hero-overlay"></div>
             <div class="absolute inset-0 flex items-center justify-center md:justify-start">
                 <div class="container mx-auto px-4 text-center md:text-right">
-                    <div class="max-w-2xl">
-                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">شريكك الموثوق لنقل العفش بأمان تام</h1>
-                        <p class="text-gray-200 text-lg md:text-xl mb-8">نقدم حلول نقل متكاملة مع ونش رفع حديث وفريق من الخبراء. استمتع بأسعار لا تقبل المنافسة وخدمة تضمن لك راحة البال.</p>
+                    <div class="max-w-2xl relative">
+                         <div class="offer-badge">خصم<br>25%</div>
+                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">شركة لنقل العفش بخصم 25% اليوم</h1>
+                        <p class="text-gray-200 text-lg md:text-xl mb-8">استمتع بخصم 25% على نقل العفش مع تغليف احترافي وضمان ضد التلفيات. نقدم حلول نقل متكاملة مع ونش رفع العفش الحديث وفريق من الخبراء لضمان راحة بالك.</p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <a href="#" data-number="01006343069" class="bg-secondary text-white px-10 py-4 rounded-full hover:bg-orange-700 transition duration-300 transform hover:scale-105 text-lg font-bold shadow-lg call-btn">احجز خدمة النقل الآن</a>
-                            <a href="#features" class="bg-white text-primary px-10 py-4 rounded-full hover:bg-gray-200 transition duration-300 transform hover:scale-105 text-lg font-bold shadow-lg">اكتشف مزايانا</a>
+                            <a href="#" data-number="01006343069" class="bg-secondary text-white px-10 py-4 rounded-full hover:bg-orange-700 transition duration-300 transform hover:scale-105 text-lg font-bold shadow-lg call-btn">احصل على خصم 25% اليوم</a>
+                            <a href="#services" class="bg-white text-primary px-10 py-4 rounded-full hover:bg-gray-200 transition duration-300 transform hover:scale-105 text-lg font-bold shadow-lg">اكتشف خدمات نقل العفش</a>
                         </div>
                     </div>
                 </div>
@@ -145,26 +162,26 @@
     <section id="services" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-4">خدماتنا المتكاملة لنقل العفش</h2>
-                <p class="text-gray-medium max-w-3xl mx-auto text-lg">نوفر لكم باقة من الخدمات الاحترافية التي تغطي كل مراحل عملية النقل، من التغليف الدقيق إلى الرفع والنقل الآمن، لضمان تجربة خالية من المتاعب.</p>
+                <h2 class="text-4xl font-bold text-primary mb-4">خدماتنا المتكاملة في نقل العفش</h2>
+                <p class="text-gray-medium max-w-3xl mx-auto text-lg">نحن شركة لنقل العفش توفر تغليف، فك وتركيب، ونقل آمن مع خصم فوري. نغطي كل مراحل عملية نقل العفش لضمان تجربة خالية من المتاعب.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div class="service-card bg-gray-light rounded-xl shadow-md p-8 text-center">
                     <div class="mb-5"><i class="fas fa-truck-ramp-box text-secondary text-5xl"></i></div>
-                    <h3 class="text-2xl font-bold text-primary mb-3">أحدث أوناش رفع العفش</h3>
-                    <p class="text-gray-dark mb-5">نقل عفشك بالرحمة تام للأدوار العليا دون أي خدوش. نستخدم أحدث الأوناش الهيدروليكية لضمان عملية رفع سلسة وآمنة.</p>
-                    <a href="#" data-number="01006343069" class="font-bold text-secondary hover:text-orange-700 transition call-btn">اطلب ونش رفع <i class="fas fa-arrow-left mr-2"></i></a>
+                    <h3 class="text-2xl font-bold text-primary mb-3">ونش رفع العفش بخصم فوري 25%</h3>
+                    <p class="text-gray-dark mb-5">خصم خاص على خدمة ونش رفع العفش لجميع الأدوار – أمان وسرعة ودقة. نستخدم أحدث الأوناش لضمان عملية رفع آمنة.</p>
+                    <a href="#" data-number="01006343069" class="font-bold text-secondary hover:text-orange-700 transition call-btn">اطلب ونش رفع العفش <i class="fas fa-arrow-left mr-2"></i></a>
                 </div>
                 <div class="service-card bg-gray-light rounded-xl shadow-md p-8 text-center">
                     <div class="mb-5"><i class="fas fa-box-open text-secondary text-5xl"></i></div>
-                    <h3 class="text-2xl font-bold text-primary mb-3">تغليف احترافي للعفش</h3>
-                    <p class="text-gray-dark mb-5">نستخدم أفضل مواد التغليف لحماية كل قطعة من عفشك. فريقنا المتخصص يضمن تغليف كل شيء بعناية فائقة لسلامته.</p>
+                    <h3 class="text-2xl font-bold text-primary mb-3">خصم 25% على تغليف العفش اليوم</h3>
+                    <p class="text-gray-dark mb-5">نقل عفش مضمون مع خصم 25%. نستخدم أفضل مواد التغليف لحماية كل قطعة من عفشك ونضمن لك نقل عفش بدون تلف وبخصم مميز.</p>
                     <a href="#" data-number="01006343069" class="font-bold text-secondary hover:text-orange-700 transition call-btn">اطلب خدمة التغليف <i class="fas fa-arrow-left mr-2"></i></a>
                 </div>
                 <div class="service-card bg-gray-light rounded-xl shadow-md p-8 text-center">
                     <div class="mb-5"><i class="fas fa-truck text-secondary text-5xl"></i></div>
-                    <h3 class="text-2xl font-bold text-primary mb-3">أسطول سيارات مجهزة</h3>
-                    <p class="text-gray-dark mb-5">سياراتنا المغلقة والمجهزة خصيصًا لنقل العفش تضمن وصول مقتنياتك بالرحمة تام، مهما كانت المسافة أو حالة الطقس.</p>
+                    <h3 class="text-2xl font-bold text-primary mb-3">نقل العفش بسرعة وخصم 25%</h3>
+                    <p class="text-gray-dark mb-5">سياراتنا المجهزة تضمن وصول مقتنياتك بأمان تام. سرعة ودقة في نقل العفش بخصم 25% لنقل عفش محترف ومضمون.</p>
                     <a href="#" data-number="01006343069" class="font-bold text-secondary hover:text-orange-700 transition call-btn">احجز سيارة نقل <i class="fas fa-arrow-left mr-2"></i></a>
                 </div>
             </div>
@@ -176,23 +193,245 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="relative">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="فريق عمل شركة الرحمة" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="فريق عمل شركة نقل عفش محترفة" class="rounded-lg shadow-xl w-full h-auto object-cover">
                      <div class="absolute -top-5 -right-5 bg-secondary rounded-full w-28 h-28 flex items-center justify-center shadow-lg text-white text-center p-2">
                         <span class="font-bold text-lg">خبرة<br>10+ سنوات</span>
                     </div>
                 </div>
                 <div>
                     <span class="text-secondary font-bold text-lg">من نحن</span>
-                    <h2 class="text-4xl font-bold text-primary my-3">الشركة الرائدة في خدمات نقل العفش في منطقتك</h2>
-                    <p class="text-gray-dark text-lg mb-4">هل تخطط للانتقال وتبحث عن شركة تضمن لك سلامة عفشك؟ في "الرحمة لنقل العفش"، نفخر بتقديم خدمات نقل تتسم بالاحترافية والدقة، مستندين إلى خبرة تمتد لأكثر من عقد من الزمان.</p>
-                    <p class="text-gray-dark text-lg mb-6">نحن متخصصون في جميع جوانب نقل العفش، مع توفير أوناش رفع للأدوار المرتفعة وتغطية شاملة لجميع أنحاء البلاد. اختر "الرحمة" لتجربة نقل سلسة ومريحة. اتصل الآن لاستشارة مجانية!</p>
+                    <h2 class="text-4xl font-bold text-primary my-3">أفضل شركة لنقل العفش في منطقتك</h2>
+                    <p class="text-gray-dark text-lg mb-4">هل تخطط للانتقال وتبحث عن شركة نقل عفش تضمن لك سلامة أثاثك؟ في "الرحمة لنقل العفش"، نفخر بتقديم خدمات نقل العفش التي تتسم بالاحترافية والدقة، مستندين إلى خبرة طويلة في هذا المجال.</p>
+                    <p class="text-gray-dark text-lg mb-6">نحن متخصصون في جميع جوانب نقل العفش، مع توفير ونش رفع العفش للأدوار المرتفعة. اختر "الرحمة" لتجربة نقل عفش سلسة ومريحة. اتصل الآن لاستشارة مجانية!</p>
                     <div class="space-y-4 mb-8">
-                        <div class="flex items-center"><i class="fas fa-check-circle text-secondary text-xl ml-3"></i><span class="text-gray-dark font-semibold">فريق عمل محترف ومدرب على أعلى المعايير.</span></div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-secondary text-xl ml-3"></i><span class="text-gray-dark font-semibold">نقل آمن، سرعة في الإنجاز، والتزام بالمواعيد.</span></div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-secondary text-xl ml-3"></i><span class="text-gray-dark font-semibold">خدمة متاحة على مدار الساعة لتلبية احتياجاتك.</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-secondary text-xl ml-3"></i><span class="text-gray-dark font-semibold">فريق عمل محترف ومدرب على نقل العفش.</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-secondary text-xl ml-3"></i><span class="text-gray-dark font-semibold">نقل عفش آمن، سرعة في الإنجاز، والتزام بالمواعيد.</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-secondary text-xl ml-3"></i><span class="text-gray-dark font-semibold">شركة نقل عفش وتوفير كبير ® متاحة 24/7.</span></div>
                     </div>
                     <a href="#" data-number="01006343069" class="bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-900 transition duration-300 inline-block font-bold shadow-md call-btn">اطلب استشارتك المجانية</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="py-20 bg-gray-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4">نخدم جميع مناطق القاهرة والجيزة بكفاءة واحترافية</h2>
+                <p class="text-gray-medium max-w-3xl mx-auto text-lg">أينما كنتم، نصل إليكم لتقديم خدمة نقل عفش لا مثيل لها. نحن أفضل شركة لنقل العفش، نقدم خدماتنا مع ونش رفع العفش لضمان الأمان والسرعة. استفيدوا من خصم 25% الآن!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/nasr-city.webp" alt="نقل عفش مدينة نصر" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش مدينة نصر</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">نقدم لكم أفضل خدمات نقل عفش في مدينة نصر مع خصم 25%. فريقنا المحترف يضمن لكم نقلًا آمنًا وسريعًا لجميع أنواع العفش والأثاث، مع استخدام ونش رفع العفش عند الحاجة.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/cairo.webp" alt="نقل عفش مصر الجديدة" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش مصر الجديدة</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">هل تبحث عن شركة نقل عفش بمصر الجديدة؟ نحن هنا لخدمتكم. نقدم خدمة نقل عفش احترافية مع تغليف وفك وتركيب، وضمان وصول مقتنياتكم بأمان تام وبدون أي تلف.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(2).jpeg" alt="نقل عفش التجمع الخامس" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش التجمع الخامس</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">لسكان التجمع الخامس، نقدم خدمة نقل عفش مميزة مع ونش رفع العفش للأدوار العليا. استفيدوا من خصم 25% على نقل آمن ومضمون بدون خدوش أو تلفيات.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(3).jpeg" alt="نقل عفش مدينتي" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش مدينتي</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">انتقل بسهولة وأمان في مدينتي مع خدماتنا المتكاملة. نحن شركة نقل عفش متخصصة، نقدم لكم أفضل الأسعار وخصم فوري 25% على جميع خدمات النقل.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="نقل عفش الرحاب" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش الرحاب</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">في مدينة الرحاب، نضمن لكم تجربة نقل عفش مريحة وخالية من القلق. نستخدم سيارات مجهزة وفريق عمل مدرب لضمان سلامة كل قطعة من أثاثكم.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/october.webp" alt="نقل عفش الشيخ زايد" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش الشيخ زايد</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">نقل عفش الشيخ زايد أصبح أسهل مع شركتنا. نقدم خدمة سريعة ودقيقة مع ونش رفع العفش، ونضمن لكم أسعارًا تنافسية وخصمًا خاصًا بنسبة 25%.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(5).jpeg" alt="نقل عفش المعادي" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش المعادي</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">لسكان المعادي الكرام، شركة الرحمة تقدم لكم خدمة نقل عفش لا مثيل لها. سرعة، أمان، واحترافية في التعامل مع جميع أنواع العفش، كل هذا بخصم 25%.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="نقل عفش حلوان" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش حلوان</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">نصل إليكم في حلوان لتقديم أفضل خدمة نقل عفش. نضمن لكم نقلًا آمنًا ومنظمًا مع فريق من الخبراء وتغليف عالي الجودة لحماية ممتلكاتكم.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/28.jpg" alt="نقل عفش المهندسين" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش المهندسين</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">في المهندسين، نقدم خدمة نقل عفش راقية تناسب احتياجاتكم. دقة في المواعيد، احترافية في التعامل، وأمان تام لعفشكم مع خصم خاص 25%.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/backing.webp" alt="نقل عفش الدقي" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش الدقي</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">شركة نقل عفش متخصصة في خدمتكم بمنطقة الدقي. نضمن لكم تجربة نقل مريحة بفضل فريقنا الخبير وأسطول سياراتنا المجهز بالكامل.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="نقل عفش العجوزة" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش العجوزة</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">نقل العفش في العجوزة يتطلب خبرة ودقة. نحن نوفر لكم كل ذلك وأكثر مع خدماتنا المتميزة وأسعارنا التنافسية وخصم 25% الفوري.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/cairo.webp" alt="نقل عفش شيراتون" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش شيراتون</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">للانتقال من أو إلى منطقة شيراتون، اعتمد على شركتنا لنقل العفش. خدمة VIP مع ونش هيدروليك لضمان سلامة المنقولات الثمينة والقابلة للكسر.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/nasr-city.webp" alt="نقل عفش النزهة الجديدة" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش النزهة الجديدة</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">أفضل شركة نقل عفش في النزهة الجديدة. نقدم لكم خدمة متكاملة تشمل الفك والتركيب والتغليف والنقل بأمان تام وبأفضل الأسعار.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="نقل عفش جسر السويس" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش جسر السويس</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">على امتداد جسر السويس، نصلك أينما كنت. خدمات نقل عفش سريعة وموثوقة، مع ضمان سلامة أثاثك وخصم خاص لجميع عملائنا.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/28.jpg" alt="شركة نقل عفش بالمقطم" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">شركة نقل عفش بالمقطم</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">نحن أفضل شركة نقل عفش بالمقطم، نوفر لكم ونش رفع العفش لسهولة النقل من وإلى الأدوار المرتفعة. اتصل بنا الآن واستفد من الخصم.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(2).jpeg" alt="نقل عفش العبور" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش العبور</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">لسكان مدينة العبور، نقدم خدمات نقل عفش متكاملة بأسعار لا تقبل المنافسة. فريقنا جاهز لخدمتكم على مدار الساعة لضمان نقل آمن ومريح.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/october.webp" alt="نقل عفش اكتوبر" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش اكتوبر</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">في مدينة 6 أكتوبر، نحن شريكك الموثوق لنقل العفش. نقدم حلولاً متكاملة مع ونش رفع حديث وفريق من الخبراء لضمان راحتك التامة.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(5).jpeg" alt="نقل عفش فيصل" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش فيصل</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">خدمة نقل عفش متميزة في فيصل. نضمن لك نقل عفش بدون تلف وبخصم مميز. اعتمد علينا لتجربة نقل سهلة وسريعة وآمنة.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(3).jpeg" alt="نقل عفش الهرم" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش الهرم</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">لسكان منطقة الهرم، نقدم خدمات نقل عفش احترافية مع التزام كامل بالمواعيد. فريقنا الخبير يضمن لك نقل كل مقتنياتك بأمان تام.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/backing.webp" alt="نقل عفش العمرانية" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش العمرانية</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">نحن هنا لخدمتكم في العمرانية. نقدم خدمة نقل عفش سريعة وآمنة مع خصم 25%. اتصل الآن واحصل على عرض سعر فوري ومجاني.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
+                 <!-- Article Start -->
+                <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="نقل عفش عين شمس" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-primary mb-3">نقل عفش عين شمس</h3>
+                        <p class="text-gray-dark mb-5 flex-grow">في عين شمس، نضمن لكم نقل عفش بدون قلق. خدماتنا تشمل التغليف الاحترافي والنقل الآمن بسيارات مجهزة لضمان سلامة أثاثكم.</p>
+                        <a href="#" data-number="01006343069" class="mt-auto bg-secondary text-white text-center font-bold px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300 call-btn">اتصل الآن لخصم 25%</a>
+                    </div>
+                </div>
+                <!-- Article End -->
             </div>
         </div>
     </section>
@@ -201,97 +440,39 @@
     <section id="features" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-4">لماذا تختار "الرحمة" لنقل عفشك؟</h2>
-                <p class="text-gray-medium max-w-3xl mx-auto text-lg">نحن لا نقدم مجرد خدمة نقل، بل نمنحك راحة البال من خلال التزامنا بأعلى مستويات الجودة والاحترافية في كل خطوة.</p>
+                <h2 class="text-4xl font-bold text-primary mb-4">لماذا نحن أفضل شركة لنقل العفش؟</h2>
+                <p class="text-gray-medium max-w-3xl mx-auto text-lg">نحن لا نقدم مجرد خدمة نقل، بل نمنحك راحة البال من خلال التزامنا بأعلى مستويات الجودة والاحترافية في كل خطوة من خطوات نقل العفش.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
                  <div class="p-6">
                     <div class="text-secondary text-4xl mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="text-xl font-bold text-primary mb-3">ضمان سلامة العفش</h3>
-                    <p class="text-gray-medium">نضمن لك نقلاً آمناً بالكامل دون أي خدوش أو أضرار، معتمدين على أحدث تقنيات الرفع والتغليف.</p>
+                    <h3 class="text-xl font-bold text-primary mb-3">نقل عفش آمن ومضمون</h3>
+                    <p class="text-gray-medium">نضمن لك نقل عفش بدون تلف وبخصم مميز. نعتمد على أحدث تقنيات ونش رفع العفش والتغليف.</p>
                 </div>
                 <div class="p-6">
                     <div class="text-secondary text-4xl mb-4"><i class="fas fa-hand-holding-usd"></i></div>
-                    <h3 class="text-xl font-bold text-primary mb-3">أسعار تنافسية</h3>
-                    <p class="text-gray-medium">نقدم لك أفضل قيمة مقابل السعر. أسعارنا واضحة وشفافة تمامًا، بلا أي رسوم خفية.</p>
+                    <h3 class="text-xl font-bold text-primary mb-3">شركة نقل عفش بأسعار أقل وامان</h3>
+                    <p class="text-gray-medium">نقدم لك أفضل قيمة مقابل السعر. أسعارنا واضحة وشفافة تمامًا، مع خصم 25% حقيقي.</p>
                 </div>
                 <div class="p-6">
                     <div class="text-secondary text-4xl mb-4"><i class="fas fa-clock"></i></div>
-                    <h3 class="text-xl font-bold text-primary mb-3">التزام بالمواعيد</h3>
-                    <p class="text-gray-medium">وقتك ثمين، ونحن نقدر ذلك. نلتزم بالمواعيد المتفق عليها لضمان سير خططك بسلاسة.</p>
+                    <h3 class="text-xl font-bold text-primary mb-3">سرعة ودقة في نقل العفش</h3>
+                    <p class="text-gray-medium">وقتك ثمين، ونحن نقدر ذلك. نلتزم بالمواعيد المتفق عليها لضمان سير خططك بسلاسة مع خصم 25%.</p>
                 </div>
                  <div class="p-6">
                     <div class="text-secondary text-4xl mb-4"><i class="fas fa-headset"></i></div>
                     <h3 class="text-xl font-bold text-primary mb-3">دعم فني 24/7</h3>
-                    <p class="text-gray-medium">فريق خدمة العملاء لدينا جاهز للرد على استفساراتك في أي وقت، لتقديم المساعدة والدعم الفوري.</p>
+                    <p class="text-gray-medium">فريق خدمة العملاء لدينا جاهز للرد على استفساراتك عن نقل العفش أو ونش رفع العفش في أي وقت.</p>
                 </div>
                 <div class="p-6">
                     <div class="text-secondary text-4xl mb-4"><i class="fas fa-users-cog"></i></div>
                     <h3 class="text-xl font-bold text-primary mb-3">فريق عمل خبير</h3>
-                    <p class="text-gray-medium">يتمتع فريقنا بالخبرة والكفاءة اللازمة للتعامل مع جميع أنواع العفش والمواقف الصعبة بمهارة.</p>
+                    <p class="text-gray-medium">يتمتع فريقنا بالخبرة اللازمة للتعامل مع جميع أنواع العفش والمواقف الصعبة بمهارة واحترافية.</p>
                 </div>
                  <div class="p-6">
                     <div class="text-secondary text-4xl mb-4"><i class="fas fa-map-marked-alt"></i></div>
                     <h3 class="text-xl font-bold text-primary mb-3">تغطية شاملة</h3>
-                    <p class="text-gray-medium">نخدم جميع المناطق في القاهرة والمحافظات المحيطة، ونصل إليك أينما كنت لتقديم أفضل خدمة.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Locations Section -->
-    <section id="location-services" class="py-20 bg-gray-light">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-4">نخدم جميع مناطق القاهرة والمحافظات</h2>
-                <p class="text-gray-medium max-w-3xl mx-auto text-lg">أينما كنتم، نصل إليكم بخدمات نقل عفش متخصصة. اتصلوا بنا الآن للحصول على خدمة نقل سريعة وموثوقة.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/nasr-city.webp" alt="نقل عفش في مدينة نصر" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بمدينة نصر</h3>
-                    </div>
-                </div>
-                <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/cairo.webp" alt="نقل عفش في مصر الجديدة" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بمصر الجديدة</h3>
-                    </div>
-                </div>
-                <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(2).jpeg" alt="نقل عفش في التجمع الخامس" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بالتجمع الخامس</h3>
-                    </div>
-                </div>
-                 <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/october.webp" alt="نقل عفش في الشيخ زايد" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بالشيخ زايد</h3>
-                    </div>
-                </div>
-                 <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(5).jpeg" alt="نقل عفش في المعادي" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بالمعادي</h3>
-                    </div>
-                </div>
-                 <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(3).jpeg" alt="نقل عفش في مدينتي" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بمدينتي</h3>
-                    </div>
-                </div>
-                 <div class="location-card bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="نقل عفش في المهندسين" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <h3 class="text-lg font-bold text-primary">نقل عفش بالمهندسين</h3>
-                    </div>
-                </div>
-                <div class="location-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-center items-center text-center p-5 bg-primary text-white">
-                     <h3 class="text-lg font-bold">ومناطق أخرى كثيرة...</h3>
-                     <p class="mt-2">اتصل بنا لمعرفة المزيد!</p>
+                    <p class="text-gray-medium">نخدم جميع المناطق لتقديم أفضل خدمة نقل عفش. نصل إليك أينما كنت.</p>
                 </div>
             </div>
         </div>
@@ -303,19 +484,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
                     <h3 class="text-5xl font-bold text-secondary mb-2">1000+</h3>
-                    <p class="text-gray-300">عميل راضٍ تمامًا</p>
+                    <p class="text-gray-300">عميل راضٍ عن خدمة نقل العفش</p>
                 </div>
                 <div>
                     <h3 class="text-5xl font-bold text-secondary mb-2">2500+</h3>
-                    <p class="text-gray-300">عملية نقل ناجحة</p>
+                    <p class="text-gray-300">عملية نقل عفش ناجحة</p>
                 </div>
                 <div>
                     <h3 class="text-5xl font-bold text-secondary mb-2">10+</h3>
-                    <p class="text-gray-300">سنوات من الخبرة</p>
+                    <p class="text-gray-300">سنوات خبرة في نقل العفش</p>
                 </div>
                 <div>
                     <h3 class="text-5xl font-bold text-secondary mb-2">5/5</h3>
-                    <p class="text-gray-300">تقييمات ممتازة</p>
+                    <p class="text-gray-300">تقييمات ممتازة من العملاء</p>
                 </div>
             </div>
         </div>
@@ -325,14 +506,14 @@
     <section id="gallery" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-4">شاهد جودة عملنا</h2>
-                <p class="text-gray-medium max-w-3xl mx-auto text-lg">نترك عملنا يتحدث عنا. تصفح صورًا من عمليات نقل وتغليف قمنا بها مؤخرًا.</p>
+                <h2 class="text-4xl font-bold text-primary mb-4">شاهد جودة عملنا في نقل العفش</h2>
+                <p class="text-gray-medium max-w-3xl mx-auto text-lg">نترك عملنا يتحدث عنا. تصفح صورًا من عمليات نقل وتغليف و ونش رفع العفش قمنا بها مؤخرًا.</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="صورة من أعمالنا 1" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
-                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/28.jpg" alt="صورة من أعمالنا 2" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
-                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="صورة من أعمالنا 3" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
-                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/backing.webp" alt="صورة من أعمالنا 4" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
+                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/1711304224153.jpeg" alt="صورة من أعمال نقل العفش 1" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
+                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/28.jpg" alt="صورة من أعمال ونش رفع العفش 2" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
+                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/6746326fe7d99.jpeg" alt="صورة من أعمال تغليف العفش 3" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
+                <div class="gallery-item rounded-lg shadow-lg overflow-hidden group cursor-pointer"><img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/backing.webp" alt="صورة من أعمال شركة نقل العفش 4" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300"></div>
             </div>
         </div>
     </section>
@@ -341,12 +522,12 @@
     <section id="testimonials" class="py-20 bg-gray-light">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-4">شهادات نعتز بها</h2>
+                <h2 class="text-4xl font-bold text-primary mb-4">شهادات نعتز بها من عملاء نقل العفش</h2>
                 <p class="text-gray-medium max-w-3xl mx-auto text-lg">آراء عملائنا هي الدافع وراء تميزنا. إليك بعض الشهادات التي نفخر بها.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="testimonial-card bg-white rounded-lg shadow-md p-8">
-                    <p class="text-gray-dark mb-6 text-lg italic">"تجربة نقل فاقت كل توقعاتي! الفريق كان محترفًا ومنظمًا للغاية، واهتموا بكل التفاصيل. بالتأكيد سأوصي بهم لأي شخص."</p>
+                    <p class="text-gray-dark mb-6 text-lg italic">"تجربة نقل عفش فاقت كل توقعاتي! الفريق كان محترفًا ومنظمًا للغاية، واهتموا بكل التفاصيل. بالتأكيد سأوصي بهذه الشركة لنقل العفش."</p>
                     <div class="flex items-center">
                         <img src="https://placehold.co/50x50/e9ecef/343a40?text=H" alt="هاشم عودة" class="w-14 h-14 rounded-full ml-4">
                         <div>
@@ -356,7 +537,7 @@
                     </div>
                 </div>
                 <div class="testimonial-card bg-white rounded-lg shadow-md p-8">
-                     <p class="text-gray-dark mb-6 text-lg italic">"كنت قلقة جدًا بشأن نقل عفش مكتبي، لكن شركة الرحمة جعلت الأمر سهلاً للغاية. التزام تام بالوقت ودقة في العمل. خدمة ممتازة!"</p>
+                     <p class="text-gray-dark mb-6 text-lg italic">"كنت قلقة جدًا بشأن استخدام ونش رفع العفش، لكن شركة الرحمة جعلت الأمر سهلاً. التزام تام بالوقت ودقة في العمل. خدمة ممتازة!"</p>
                     <div class="flex items-center">
                          <img src="https://placehold.co/50x50/e9ecef/343a40?text=S" alt="سارة محمود" class="w-14 h-14 rounded-full ml-4">
                         <div>
@@ -366,7 +547,7 @@
                     </div>
                 </div>
                 <div class="testimonial-card bg-white rounded-lg shadow-md p-8">
-                    <p class="text-gray-dark mb-6 text-lg italic">"استعنت بهم لنقل عفش منزلي، وكانوا عند حسن الظن. التغليف كان متقنًا، والعمالة كانت في غاية الاحترام والاحترافية. شكرًا لكم."</p>
+                    <p class="text-gray-dark mb-6 text-lg italic">"استعنت بهم في عملية نقل العفش، وكانوا عند حسن الظن. التغليف كان متقنًا، والعمالة في غاية الاحترافية. شكرًا لشركة نقل العفش الرائعة."</p>
                     <div class="flex items-center">
                          <img src="https://placehold.co/50x50/e9ecef/343a40?text=A" alt="أحمد خالد" class="w-14 h-14 rounded-full ml-4">
                         <div>
@@ -384,17 +565,17 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center bg-primary rounded-xl shadow-2xl p-10 md:p-16">
                 <div>
-                    <h2 class="text-4xl font-bold text-white mb-5">هل أنت جاهز للانتقال؟</h2>
-                    <p class="text-gray-200 mb-8 text-lg">فريقنا مستعد لمساعدتك. تواصل معنا اليوم للحصول على استشارة مجانية وعرض سعر مصمم خصيصًا ليناسب احتياجاتك.</p>
+                    <h2 class="text-4xl font-bold text-white mb-5">هل أنت جاهز لـ نقل العفش بخصم 25%؟</h2>
+                    <p class="text-gray-200 mb-8 text-lg">فريقنا مستعد لمساعدتك. تواصل مع أفضل شركة لنقل العفش اليوم للحصول على استشارة مجانية وعرض سعر مصمم خصيصًا لك.</p>
                     <form class="space-y-5">
                         <input type="text" placeholder="الاسم الكريم" class="w-full px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-gray-dark">
                         <input type="tel" placeholder="رقم الهاتف" class="w-full px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-gray-dark">
-                        <textarea placeholder="رسالتك (اختياري)" rows="4" class="w-full px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-gray-dark"></textarea>
-                        <button type="submit" class="bg-secondary text-white font-bold px-10 py-3 rounded-lg hover:bg-orange-700 transition duration-300 w-full text-lg shadow-md">إرسال الطلب</button>
+                        <textarea placeholder="اكتب عن خدمة نقل العفش أو ونش رفع العفش التي تحتاجها (اختياري)" rows="4" class="w-full px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-gray-dark"></textarea>
+                        <button type="submit" class="bg-secondary text-white font-bold px-10 py-3 rounded-lg hover:bg-orange-700 transition duration-300 w-full text-lg shadow-md">إرسال الطلب والحصول على الخصم</button>
                     </form>
                 </div>
                 <div class="hidden md:flex justify-center items-center">
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(5).jpeg" alt="تواصل مع شركة الرحمة لنقل العفش" class="rounded-lg shadow-xl object-cover max-h-[450px]">
+                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/images(5).jpeg" alt="تواصل مع شركة الرحمة لـ نقل العفش" class="rounded-lg shadow-xl object-cover max-h-[450px]">
                 </div>
             </div>
         </div>
@@ -405,7 +586,7 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div>
-                    <img src="https://raw.githubusercontent.com/code-house10/ragab_hemaid_images/refs/heads/main/logo.webp" alt="شعار شركة الرحمة" class="h-16 mb-4">
+                    <img src="images/logo.png" alt="شعار شركة الرحمة لنقل العفش" class="h-16 mb-4">
                     <p class="mb-4 text-sm">"الرحمة لنقل العفش"، اسم يعني الثقة في عالم نقل العفش. نقدم حلولاً متكاملة لنقل آمن وسريع، مع التزامنا بالجودة والاحترافية.</p>
                     <div class="flex space-x-4 space-x-reverse">
                         <a href="#" class="hover:text-secondary transition"><i class="fab fa-facebook-f text-xl"></i></a>
@@ -414,37 +595,37 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-white text-xl font-bold mb-6">روابط هامة</h3>
+                    <h3 class="text-white text-xl font-bold mb-6">خدماتنا الرئيسية</h3>
                     <ul class="space-y-3">
-                        <li><a href="#about" class="hover:text-secondary transition">عن الشركة</a></li>
-                        <li><a href="#services" class="hover:text-secondary transition">خدماتنا</a></li>
-                        <li><a href="#gallery" class="hover:text-secondary transition">أعمالنا السابقة</a></li>
-                        <li><a href="#contact" class="hover:text-secondary transition">تواصل معنا</a></li>
+                        <li><a href="#services" class="hover:text-secondary transition">نقل عفش داخل وخارج المدينة</a></li>
+                        <li><a href="#services" class="hover:text-secondary transition">ونش رفع العفش</a></li>
+                        <li><a href="#services" class="hover:text-secondary transition">تغليف وفك وتركيب العفش</a></li>
+                        <li><a href="#contact" class="hover:text-secondary transition">شركة نقل عفش مضمونة</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-white text-xl font-bold mb-6">معلومات الاتصال</h3>
                     <ul class="space-y-4">
-                        <li class="flex items-start"><i class="fas fa-map-marker-alt text-secondary mt-1 ml-3"></i><span>القاهرة، مصر</span></li>
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt text-secondary mt-1 ml-3"></i><span>القاهرة، وجميع المحافظات</span></li>
                         <li class="flex items-center"><i class="fas fa-phone-alt text-secondary ml-3"></i><a href="#" data-number="01006343069" class="hover:text-secondary transition call-btn">01006343069</a></li>
-                        <li class="flex items-center"><i class="fas fa-envelope text-secondary ml-3"></i><a href="mailto:info@aman-moving.com" class="hover:text-secondary transition text-sm">info@aman-moving.com</a></li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-secondary ml-3"></i><a href="mailto:info@alrahma-moving.online" class="hover:text-secondary transition text-sm">info@alrahma-moving.online</a></li>
                     </ul>
                 </div>
                 <div>
-                     <h3 class="text-white text-xl font-bold mb-6">هل أنت مستعد؟</h3>
-                     <p class="mb-4 text-sm">دعنا نجعل انتقالك القادم هو الأسهل على الإطلاق. اتصل بنا الآن!</p>
-                     <a href="#" data-number="01006343069" class="bg-secondary text-white font-bold px-6 py-3 rounded-lg hover:bg-orange-700 transition duration-300 inline-block w-full text-center call-btn">اطلب عرض سعر مجاني</a>
+                     <h3 class="text-white text-xl font-bold mb-6">جاهز لـ نقل العفش؟</h3>
+                     <p class="mb-4 text-sm">دعنا نجعل انتقالك القادم هو الأسهل. اتصل بنا الآن للحصول على خصم 25%!</p>
+                     <a href="#" data-number="01006343069" class="bg-secondary text-white font-bold px-6 py-3 rounded-lg hover:bg-orange-700 transition duration-300 inline-block w-full text-center call-btn">اطلب عرض سعر مجاني بخصم 25%</a>
                 </div>
             </div>
             <hr class="border-gray-800 my-6">
             <div class="text-center">
-                <p class="text-gray-400 text-sm">&copy; 2024 الرحمة لنقل العفش. كل الحقوق محفوظة.</p>
+                <p class="text-gray-400 text-sm">&copy; 2024 الرحمة لنقل العفش. كل الحقوق محفوظة. شركة نقل عفش رائدة وموثوقة.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Call Button -->
-    <a href="#" data-number="01006343069" class="floating-button bg-secondary text-white rounded-full p-4 flex items-center justify-center shadow-xl call-btn" title="اتصل بنا الآن: 01006343069">
+    <a href="#" data-number="01006343069" class="floating-button bg-secondary text-white rounded-full p-4 flex items-center justify-center shadow-xl call-btn" title="اتصل بنا الآن واحصل على خصم 25% على نقل العفش: 01006343069">
         <i class="fas fa-phone-alt text-2xl"></i>
     </a>
     
@@ -452,8 +633,8 @@
     <div id="pre-call-modal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[101] hidden">
         <div class="bg-white rounded-lg shadow-2xl p-8 max-w-sm w-full mx-4 text-center transform transition-all" style="opacity: 0; transform: scale(0.95);">
             <i class="fas fa-clipboard-list text-secondary text-4xl mb-4"></i>
-            <h3 class="text-2xl font-bold text-primary mb-3">حدد خدمة نقل العفش التى تريدها</h3>
-            <p class="text-gray-dark mb-6">لمساعدتنا على خدمتك بشكل أفضل، يرجى تحديد الخدمة التي تهتم بها.</p>
+            <h3 class="text-2xl font-bold text-primary mb-3">حدد خدمة نقل العفش التي تريدها</h3>
+            <p class="text-gray-dark mb-6">اختر الخدمة التي تهتم بها للحصول على أفضل مساعدة ممكنة.</p>
             <div class="space-y-3">
                  <button data-service="residential" class="service-select-btn block w-full bg-primary text-white font-bold px-10 py-3 rounded-lg hover:bg-blue-900 transition duration-300">نقل عفش منزلي</button>
                  <button data-service="office" class="service-select-btn block w-full bg-primary text-white font-bold px-10 py-3 rounded-lg hover:bg-blue-900 transition duration-300">نقل عفش مكتبي</button>
@@ -468,8 +649,8 @@
     <div id="call-confirmation-modal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[100] hidden">
         <div class="bg-white rounded-lg shadow-2xl p-8 max-w-sm w-full mx-4 text-center transform transition-all" style="opacity: 0; transform: scale(0.95);">
             <i class="fas fa-phone-volume text-secondary text-4xl mb-4"></i>
-            <h3 class="text-2xl font-bold text-primary mb-3">تأكيد الاتصال</h3>
-            <p class="text-gray-dark mb-6">هل ترغب حقًا في الاتصال بنا الآن؟ فريقنا جاهز للرد على جميع استفساراتك.</p>
+            <h3 class="text-2xl font-bold text-primary mb-3">تأكيد الاتصال للحصول على الخصم</h3>
+            <p class="text-gray-dark mb-6">هل ترغب في الاتصال بنا الآن والاستفادة من خصم 25% على خدمات نقل العفش؟</p>
             <div class="space-y-3">
                  <a id="confirm-call-btn" href="#" class="block w-full bg-secondary text-white font-bold px-10 py-3 rounded-lg hover:bg-orange-700 transition duration-300 text-lg shadow-md">
                     <i class="fas fa-phone ml-2"></i> نعم، اتصل الآن
